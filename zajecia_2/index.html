@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- Naglowek header glownie zawiera logo, nawigacje, ikony, zlozony naglowek -->
+		<header>
+			<a href="/">Logo</a>
+			<!-- nav uzywamy do nawigacji glownej  -->
+			<nav>
+				<ul>
+					<li>Kontakt</li>
+					<li>O mnie</li>
+				</ul>
+			</nav>
+			<div>e-mail</div>
+		</header>
+
+		<!-- main - glowna tresc strony, uzywamy 1 raz, tutaj zawiera sie cala strona praktycznie oprocz header - menu, footer -->
+		<main>
+			<article>
+				<h2>Wpis o nowych technologiach</h2>
+				<img src="" alt="zdjecie kompa" />
+				<p>Open Ai wypuscil nowy algorytm</p>
+			</article>
+
+			<section>
+				<h2>Wybrane dla przepisy dla ciebie</h2>
+
+				<ul>
+					<li>Kurczak z ryzem</li>
+					<li>Tortilla</li>
+					<li>Ryba z ziemniakami</li>
+				</ul>
+			</section>
+
+			<div>
+				<h2>Wybrane dla przepisy dla ciebie</h2>
+
+				<ul>
+					<li>Kurczak z ryzem</li>
+					<li>Tortilla</li>
+					<li>Ryba z ziemniakami</li>
+				</ul>
+			</div>
+		</main>
+
+		<!-- table - okresla cala table, pudelko na tr th  -->
+		<!-- tr - wiersz tabeli - row 
+        td - komorka tabeli  -->
+
+		<!-- thead - naglowek tabeli 
+        tbody - cialo tabeli 
+        tfoot - stopka tabeli  -->
+		<!-- th - uzywany w thead !! wazne  -->
+
+		<table>
+			<thead>
+				<tr>
+					<th>Numer trasy</th>
+					<th>Trasa</th>
+					<th>czas podrozy</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>111</td>
+					<td>Katowic - Warszawy</td>
+					<td>3 godziny</td>
+				</tr>
+				<tr>
+					<td>222</td>
+					<td>Gdansk - Warszaw</td>
+					<td>5 godziny</td>
+				</tr>
+				<tr>
+					<td>333</td>
+					<td>Katowic - Gdansk</td>
+					<td>8 godziny</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td>Czas ulegl zmianie</td>
+				</tr>
+			</tfoot>
+		</table>
+
+		znacznik dl (description list) kontyner na liste pare elementow i ich opisow
+		dt - tagowanie jakiegos terminu dd - opis danego terminu
+
+		<dl>
+			<dt>#JPEG</dt>
+			<dd>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+				laborum consequuntur, vero vel, voluptas, nostrum iure at cumque
+				molestias autem mollitia recusandae! Debitis eaque ad reprehenderit
+				delectus at ullam dolores?
+			</dd>
+			<dt>#Webp</dt>
+			<dd>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+				laborum consequuntur, vero vel, voluptas, nostrum iure at cumque
+				molestias autem mollitia recusandae! Debitis eaque ad reprehenderit
+				delectus at ullam dolores?
+			</dd>
+			<dt>#SVG</dt>
+			<dd>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+				laborum consequuntur, vero vel, voluptas, nostrum iure at cumque
+				molestias autem mollitia recusandae! Debitis eaque ad reprehenderit
+				delectus at ullam dolores?
+			</dd>
+		</dl>
+
+		<!-- span - jest jakis uniwersalny pojemnik na mala zawartosc tekstowa i jest on inline  -->
+
+		<p>Glowna nagrode wygral <span>Tomek</span></p>
+
+		<!-- pre - preformatted - ten tag sluzy do definiowania tekstu ktory powinien
+		zostac wyswietlony w dokladnie sposob jak piszemy -->
+
+		<pre>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus,
+            laborum consequuntur, vero vel, voluptas, nostrum iure at cumque,
+            molestias autem mollitia recusandae! Debitis eaque ad reprehenderit,
+            delectus at ullam dolores?
+        </pre
+		>
+
+		<!-- sup - index górny
+        sub - index dolny -->
+
+		<p>Dzialka 1500m<sup>2</sup></p>
+		<p>a<sub>1</sub>+ a<sub>2</sub>= x<sup>2</sup></p>
+
+		<!-- address - znacznik sluzy do zamieszczania adresu  -->
+		<address>
+			Warszawa,<br />
+			ul Wojewodzka
+
+			<a href="mailto:goit@wp.pl">goit@wp.pl</a>
+			<p>Warszawa</p>
+			<p>ul. Wojewodzka 45</p>
+		</address>
+
+		strong oraz b - bold ( w projektach uzywamy raczej stron ale mozna uzyc tez
+		b - jest to pogrubienie)
+
+		<p>Moj kod jest <strong>super</strong></p>
+		<p>Moj kod jest <b>super</b></p>
+
+		<!-- time - glownie na potrzeby pozycjonowania  -->
+		<p>
+			Najnowsze wiadomości
+			<time datetime="2019-12-14">14 grudnia 2019 roku</time>.
+		</p>
+
+		<p><i>moj tekst</i></p>
+		<p><em>Podkreslenie</em></p>
+
+		<video
+			src="http://techslides.com/demos/sample-videos/small.webm"
+			poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+			width="640"
+			controls
+			autoplay
+			loop
+			preload="auto"
+		></video>
+
+		<!-- stopka ( ostatnia czesc strony, linki spolecznosciowe, dane Kontaktowe,
+		prawa autorskie, jakies dane o rodo) -->
+		<footer>
+			<p>2023 &#169; 😄</p>
+		</footer>
+	</body>
+</html>
