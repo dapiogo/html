@@ -1,0 +1,41 @@
+:root {
+    --default-background:#333;
+    --first-color-text:#fff;
+}
+
+body {
+    margin: 0;
+}
+
+
+.header {
+    background-color: var(--default-background);
+}
+
+.header h1 {
+    text-align: center;
+    color:var(--first-color-text);
+}
+
+.navigation {
+ background-color: #666;
+}
+
+.navigation ul {
+    list-style-type: none;
+}
+
+.navigation-item a {
+    color: var(--first-color-text);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+.footer {
+    background-color: var(--default-background);
+}
+
+.footer p {
+    color:var(--first-color-text);
+}
