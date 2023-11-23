@@ -1,0 +1,137 @@
+
+/* Dekoracje tekstu */
+
+/* font-family - ustawia rodzine czcionek dla elementu body czyli dla calej strony */
+
+/* sans-serif - czcionka bez wykonczenia ( bez szeryfowa )  */
+
+/* serif - szeryfowa ( starodawna) z wykonczeniem */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Helvetica Neue', 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+}
+
+/* //w celach pokazowych - ladujemy czcionke z google - Open Sans  */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+/* Podkreslenie tekstu */
+.title {
+    text-decoration: underline;
+}
+
+/* Przekreslenie tekstu */
+.text > span {
+    text-decoration: line-through;
+}
+
+/* /Brak dekoracji tekstu */
+
+.link {
+    text-decoration: none;
+}
+
+/* Wielkosc liter  */
+
+/* zmiana wszystkich liter na wielkie - uppercase , na male lowercase, capitalize - pierwsza duza     */
+.site-nav .link {
+    text-transform: uppercase;
+}
+
+/* wyrownanie tekstu  */
+
+
+/* wysrodkowanie tekstu naglowka */
+.post-title {
+    text-align: center;
+}
+
+/* /wyrorwnanie tekstu do prawej */
+.align-right {
+    text-align: right;
+}
+
+/* wyrowanie tekstu z obu stron  */
+.align-justify {
+    text-align: justify;
+}
+
+/* wciecie pierwszego wiersza tekstu */
+.post-text {
+    text-indent: 100px;
+}
+
+/* /odstepy miedzy wierszami */
+
+.text {
+    line-height: 1.5;
+}
+
+/* Odstepy pomiedzy znakami / literami  */
+
+.post-title {
+    letter-spacing: 10px;
+}
+
+.title {
+    color:white;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Formatowanie spacji i dzielenie wyrazow  */
+
+/* formatowanie spacji w tekscie  */
+
+.post-text {
+    white-space: pre-wrap;
+}
+
+/* font- size -ustawia rozmiar czcionki w pikselach lub w innych wartosciach  */
+
+.text {
+    font-size:20px;
+}
+
+/* font-weight - kontrouluje grubosc liter w czcionce  */
+
+.title {
+    font-weight: 400 ;
+}
+
+.text {
+    font-weight: 700;
+}
+
+/* font-style ustawia style tekstu np kursywa  */
+
+.title {
+    font-style:italic;
+}
+
+pre {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color:gray;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* ::first-letter sterowanie stylem pierwszego znaku w tekscie elementu */
+
+pre::first-letter {
+    color:red;
+    background-color: yellow;
+    font-size: 25px;
+}
+
+/* ::selection - sterowanie stylem zaznaczenia tekstu elementu  */
+
+pre::selection {
+    color:red;
+    background-color: yellow;
+}

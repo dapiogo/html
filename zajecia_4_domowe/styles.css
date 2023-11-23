@@ -1,0 +1,49 @@
+:root {
+    --first-color-text:#000;
+    --second-color-text:#4285f4;
+    --color-white:white;
+    --iris:#4D5AE5;
+}
+
+
+body {
+    font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
+    color:#333;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: var(--color-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    color:var(--color-white);
+    background-color: var(--iris);
+
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ button:hover {
+    background-color: blue;
+}
+
+.logo {
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:var(--first-color-text);
+    font-weight: 600;
+}
+
+.highlight {
+    color:var(--second-color-text);
+}
