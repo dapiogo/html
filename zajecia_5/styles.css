@@ -1,0 +1,230 @@
+*, *::before, *::after  {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content_box {
+    background-color: burlywood;
+    height:200px;
+    width: 200px;
+    padding: 20px;
+    border:30px solid black;
+    margin:10px;
+    box-sizing: content-box;
+}
+
+.border_box {
+    background-color: burlywood;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    border:30px solid black;
+    margin:10px;
+    box-sizing: border-box;
+}
+
+.box_model {
+    display: none;
+}
+
+/* nawigacja  */
+
+nav {
+    background-color: #555;
+    padding: 10px;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px
+}
+
+a {
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+/* /content - margin  */
+
+.content {
+    padding: 20px;
+    margin:20px;
+    background-color: #f0f0f0;
+}
+
+.content_desc {
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin:40px;
+    border: 1px solid black;
+}
+
+/* galeria zdjec  */
+
+.image_gallery {
+    text-align: center;
+}
+
+.image_gallery_paragraph {
+    border-bottom: 2px solid black;
+    margin: 10px auto;
+    padding: 0px 0px 10px;
+}
+
+.image_container img {
+    width: 400px;
+    height: 250px;
+}
+
+.image_container {
+    display: inline-block;
+    margin:40px 20px;
+}
+
+.image_container:hover img {
+    border: 4px solid black;
+}
+
+
+/* posty  */
+
+.posts {
+    margin:20px auto;
+    max-width: 1210px;
+}
+
+.post {
+    padding: 15px;
+    border:2px solid #2a2a2a;
+    display: inline-block;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+.post_thumb {
+   margin-bottom: 30px;
+   text-align: center;
+}
+
+.post_heading {
+    margin-top:0;
+    margin-bottom: 10px;
+    border:3px solid teal;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.post_image {
+    width:350px;
+    height:350px;
+    border:3px solid black;
+    border-radius: 50%;
+}
+
+.post_text {
+    padding: 20px;
+}
+
+/* sekcja barber   */
+
+.barber {
+    margin:10px; 
+    padding:10px;
+    background-color: lightslategray;
+}
+
+.barber_description {
+    background-color: grey;
+    color:white;
+    text-align: center;
+    max-width: 210px;
+    margin: 0 auto;
+}
+
+/* /sekcja wybierz fryzure  */
+
+
+.haircut {
+    text-align: center;
+}
+
+.choose-haircut {
+    padding:10px;
+    text-align: center;
+}
+
+.choose-box  {
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background-color: orange;
+    text-align: center;
+    padding:10px;
+    border-radius: 50%;
+}
+
+.choose-box:first-child {
+    background-color: yellow;
+}
+
+.choose-box:last-child {
+    background-color: red;
+}
+
+.haircut-thumb {
+    display: inline-block;
+}
+
+.haircut-image {
+    width:300px;
+    height:300px;
+}
+
+/* .haircut-thumb:nth-of-type(-n+2)  -n + 2 wtedy pierwszy sie zaznacza  */
+
+.haircut-thumb:nth-of-type(even) {
+    border:2px solid black;
+}
+
+
+/* //barberzy z figmy  */
+
+.barber_container {
+    padding:10px;
+}
+
+.barber_container h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.barber_box  {
+    display: inline-block;
+    margin:0 20px;
+    text-align: center;
+}
+
+.barber_type {
+    margin:20px 0;
+}
+
+.barber_social > div {
+    display: inline-block;
+    padding: 8px;
+    background-color: white;
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    border:1px solid black;
+    text-align: center;
+}
+
+.barber_image {
+    width:370px;
+    height:346px
+}
