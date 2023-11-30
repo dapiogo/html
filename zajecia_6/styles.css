@@ -1,0 +1,214 @@
+*, *::before, *::after  {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* nav */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #555;
+    padding: 10px;
+    height: 60px;
+}
+
+.nav_menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav_logo {
+    height: 30px;
+    width:30px;
+    border:1px solid black;
+    background-color: chocolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_menu_item {
+    margin: 0 10px;
+}
+
+.nav_menu_item a {
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+/* content  */
+
+.content {
+    padding: 20px;
+    margin: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+
+/* box_model  */
+
+.border_box {
+    background-color: burlywood;
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    border: 30px solid black;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.box_model {
+    height: 400px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.border_box:first-child {
+    align-self: flex-end;
+}
+
+/* //desc content  */
+
+.content_desc {
+    padding: 20px;
+    background-color: #f0f0f0;
+    margin: 40px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* //image gallery  */
+
+.image_gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.image_gallery_paragraph {
+    display: flex;
+    justify-content: center;
+    padding:10px;
+}
+
+.image_container_all {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image_container img {
+    width: 400px;
+    height: 250px;
+}
+
+/* posty  */
+
+.post_image {
+    width: 350px;
+    height: 350px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.posts_all {
+    display: flex;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.post_text {
+    text-align: center;
+    padding: 10px;
+}
+
+.post_heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 3px solid teal;
+    text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.haircut , .barber {
+    display: none;
+}
+
+/* barbers */
+
+.barber_image {
+    width: 370px;
+    height: 346px;
+}
+
+.barber_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.barber_all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.barber_box {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    align-items: center;
+}
+
+.barber_social {
+    display: flex;
+    justify-content: space-around; 
+    min-width: 150px;
+}
+
+/* //page  */
+
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.page_header {
+    height: 150px;
+    border:2px solid blue;
+    background-color: lightblue;
+    color:black;
+}
+
+.page_content {
+flex-grow: 1;
+}
+
+.page_footer {
+    height: 100px;
+    border:2px solid grey;
+    background-color: lightcoral;
+    color:white
+}
