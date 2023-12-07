@@ -1,0 +1,229 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Raleway', sans-serif;
+    color:black;
+}
+
+footer {
+    height:800px;
+}
+
+/* 1. Pseudoelementy */
+
+header {
+    background: lightsteelblue;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-list {
+    list-style:none;
+    display: flex;
+}
+
+.menu-list li {
+    padding: 10px;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 200px;
+}
+
+.menu-list li::before {
+    content:"\2605";
+    padding-right: 2px;
+    
+}
+
+.menu-list li::after {
+   content: " ";
+   width:200px;
+   height:4px;
+   background-color: black;
+}
+
+.menu-list li:hover::after {
+    display: block;
+}
+
+/* background-image  */
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* background-repeat: repeat | repeat-x | repeat-y | no-repeat */
+
+.section1 {
+    background-image: url('https://farm3.static.flickr.com/2098/2260149771_00cb406fd6_o.jpg');
+    background-repeat: no-repeat;
+}
+
+.section2 {
+    background-image: url('https://interactive-examples.mdn.mozilla.net/media/examples/moon.jpg'); 
+   color:white;
+}
+
+/* background-position: x y */
+
+.people {
+    display: flex;
+    justify-content: space-between;
+}
+
+.people div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height:600px;
+    width: 400px;
+    border:2px solid black;
+    background-image:url('https://zyskiwanieprzewagi.com/wp-content/uploads/2013/06/steve-jobs1.jpg');
+    background-repeat: no-repeat;
+    background-position: 10px 100px;
+    background-position: center;
+}
+
+/*  background-size: auto | wartość | cover | contain --> */
+
+.product {
+    display: flex;
+    justify-content: center;
+}
+
+.product div {
+    border: 2px solid black;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    background-image:url('https://fruties.pl/cache/large/product/webp/13249/ayypXpeU1yHcy3PjxSrtDPndwTNjSZ0VnOJviNq6.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* attache */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 40px;
+    background-image: url('https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/07/computer-coding.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:700px;
+    background-attachment: fixed;
+}
+
+.box {
+    height: 400px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box:first-child {
+    background-image: url('https://jaki-jezyk-programowania.pl/img/technologies/javascript.png');
+}
+
+.box:last-child {
+    background-image:url('https://icons.iconarchive.com/icons/martz90/hex/512/html-5-icon.png')
+}
+
+/* gradient  */
+
+.intro {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    background:linear-gradient(45deg, #ffcc5c 20%, #3c3c3c 20% 50%, #ff6f69 50% 80%, #96ceb4 80%)
+}
+
+.posts {
+    display: flex;
+    justify-content: space-between;
+    padding:40px 10px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border:2px solid black;
+    padding:10px;
+    box-shadow: 0 11px 50px #777;
+}
+
+.post:hover {
+    box-shadow: 0 15px 10px #777;
+}
+
+.my-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    border:1px solid black;
+    width:400px;
+    background-color: lightblue;
+    padding:20px;
+    box-shadow: -50px -34px 22px -9px rgba(66, 68, 90, 1);
+}
+
+.example {
+    background-image: url('https://img.freepik.com/free-photo/top-view-different-paper-sheets_23-2148187897.jpg?w=1380&t=st=1701971924~exp=1701972524~hmac=20627d7593fb3b41c1a6e20dfa28282eedd71d0c6762514c6769f7e09070abd4');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+}
+
+.example::before {
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    background:linear-gradient(to bottom,rgba(0,0,0,0.6), transparent);
+}
+
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin:10px;
+    cursor: pointer;
+}
+
+.custom-button:hover,
+.custom-button:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+
+.icon-contaier {
+    font-size: 48px;
+    color:#555;
+}
+
+.icon-contaier:hover {
+    color:#e44d26;
+}
