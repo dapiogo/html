@@ -1,0 +1,283 @@
+/* .wrapper-box {
+    padding:10px;
+    border:1px solid black;
+    display: flex;
+}
+
+.box {
+    width:100px;
+    height:100px;
+    margin:10px;
+    background-color: blue;
+}
+
+.relative {
+    position: relative;
+    top:10px;
+}
+
+.absolute {
+    background-color: yellow;
+} */
+
+body {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    padding: 10px;
+    background: black;
+    border-bottom: 10px solid gray;
+    position: fixed;
+    width: 30%;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+header ul {
+    list-style:none;
+    display: flex;
+}
+
+header ul li {
+    padding:10px;
+    margin:4px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+
+.children {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    background-color: black;
+    padding: 0;
+}
+
+.children1 {
+    top: 30px;
+    right: 5px;
+}
+
+.children2 {
+    top: 30px;
+    right: 0px;
+}
+
+li.page_item_has_children:hover > ul.children {
+    display: flex;
+}
+
+.page_item_has_children {
+    position: relative;
+}
+
+.wrapper-col {
+    display: flex;
+    padding: 50px;
+}
+
+.col {
+width: 50%;
+}
+
+.sticky {
+    position: sticky;
+    top:20px;
+    padding: 30px 20px;
+    background-color: burlywood;
+    color:#555;
+    font-weight: bold;
+}
+
+.people {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    height: 500px;
+    border: 5px solid black;
+}
+
+.person {
+    border: 2px solid yellow;
+    width: 250px;
+    height: 250px;
+    background: lightblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+.img { 
+    width: 100px; 
+    height: 100px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.about {text-align: center;}
+
+.person1 {
+    right: 46%;
+    top: 2%;
+}
+
+.person2 {
+    left: 21%;
+    top: 31%;
+}
+
+.person3 {
+    left: 37%;
+    top: 55%;
+}
+
+.person4 {
+    right: 30%;
+    top: 31%;
+}
+
+
+.wrapper-img {
+    position: relative;
+}
+
+.img2 {
+    top: -50px;
+    left: -83px;
+}
+
+.img1 {
+    top: -131px;
+    left: -35px;
+}
+
+
+/* posty  */
+
+.post_image {
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.posts_all {
+    display: flex;
+    position: relative;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    border: 2px solid yellow;
+    border-radius: 15px;
+    position: absolute;
+}
+
+.post_text {
+    text-align: center;
+    padding: 10px;
+}
+
+.post_heading {
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.post1 {
+    background-color: blue;
+    left: 23%;
+    z-index: 1;
+}
+
+.post2 {
+    background-color: red;
+    left: 36%;
+}
+
+.post3 {
+    background-color: orange;
+    left: 49%;
+    z-index: 1;
+}
+
+.products {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    width:200px;
+    border:2px solid black;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+}
+
+.product-image {
+    text-align: center;
+}
+
+.product-image img {
+    width:150px;
+}
+
+.product-price {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding:10px;
+    text-align: center;
+}
+
+.product-description {
+    height: 100px;
+    overflow: auto;
+}
+
+.holiday {
+    background-color: red;
+    position: absolute;
+    color:white;
+    width:100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+.black-friday {
+    background-color: black;
+    color:white;
+    position: absolute;
+    text-align: center;
+    padding: 2px;
+    right: 0px;
+    top: 0;
+}
