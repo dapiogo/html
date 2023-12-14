@@ -1,0 +1,256 @@
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:target  */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    display: flex;
+    background-color: #333;
+    padding: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+
+a:target {
+    background-color: #fcc;
+  }
+
+
+  .wrapper {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /* //home  / */
+
+  .box {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color: red;
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background-color, transform;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 100ms;
+
+  }
+
+  .box2 {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color: red;
+    color:white;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition-property: background-color, transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 100ms;
+  }
+
+  .box:hover,.box2:hover {
+    background-color: blue;
+    transform: rotate(180deg);
+  }
+
+  /* //sun  */
+
+  .wrapper-sun {
+    background:lightblue;
+  }
+
+  .sun {
+    transform: scale(0.5) translateY(-200px) translateX(1100px);
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 100ms;
+  }
+
+  .sun:hover {
+    transform: rotate(180deg);
+  }
+
+
+  /* button transition  */
+
+  .btn {
+    width: 320px;
+    height: 80px;
+    background-color: blue;
+    border:none;
+    color:white;
+    font-size: 32px;
+    border-bottom: 10px solid black;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    top:0;
+    right: -100%;
+    transition: transform 2s ease-in-out;
+    opacity: 0.5;
+  }
+
+  .btn:hover::after {
+    transform: translateX(-100%);
+  }
+
+  /* animation / */
+
+  /* stan poczatkowy - from 
+  stan koncowy - to */
+  
+  /* opis  */
+  /* animation-name -> dodajemy nasz keyframe nazwa (appear)  */
+  /* animation-duration - czas trwania animacji  */
+  /* animation-delay - opoznienie, zaladuje najpierw strona i chwile czekamy az nasza animacja wystartuje  */
+  /* animation fill mode - wybieranie stanu po zakonczeniu animacji
+  none - default,
+    forwards - czyli animacje zostaje w ostatniej klatce po zakonczeniu cyklu animacji 
+    backwars - animacja zostaje w pierwszej klatce po zakonczeniu cyklu animacji
+    both - na poczatku bierze form a na koncu to 
+  */
+
+  /* animation-direction - kierunek animacji  */
+  /* :none (0,1 ); */
+/* :reverse (1,0 ); */
+/* :alternate - na przemian  */
+/* alternate reverse - naprzemienna od tylu  */
+
+/* animation  */
+/* animation-play-state - zatrzymywanie animacji  */
+
+/* animation timing function - okresla jak postepuje animacja  */
+
+  @keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+  }
+
+  .car {
+    /* opacity: 0; */
+    animation-name: appear;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  .car:hover {
+    animation-play-state: paused;
+  }
+
+  /* car2  */
+
+  /* car2 */
+
+  @keyframes appear2 {
+    0% {
+        transform: translateX(-300px);
+    }
+
+    50% {
+        transform:translateY(-300px) ;
+    }
+
+    70% {
+        transform:rotate(180deg) ;
+    }
+
+    100% {
+        transform: translateX(300px);
+    }
+  }
+
+  .car2 {
+    animation-name: appear2;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: easy;
+  }
+
+  /* perspektywa  */
+
+  /* https://cdn4.vectorstock.com/i/1000x1000/00/83/christmas-card-vector-27740083.jpg */
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    padding:50px;
+  }
+
+  .image-card {
+    width: 500px;
+    height: 500px;
+    padding:8px;
+    border-radius: 1rem;
+    background-image: url('https://cdn4.vectorstock.com/i/1000x1000/00/83/christmas-card-vector-27740083.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  }
+
+  .perspective-left {
+    transform: perspective(1500px) rotateY(20deg);
+    transition: transform 1s ease 0s;
+  }
+
+  .perspective-right {
+    transform: perspective(1500px) rotateY(-20deg);
+    transition: transform 1s ease 0s;
+  } 
+
+
+  .perspective-left:hover {
+    transform: perspective(3000px) rotateY(5deg);
+  }
+
+  .perspective-right:hover {
+    transform: perspective(3000px) rotateY(-5deg);
+  }
