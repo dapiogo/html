@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularze HTM</title>
+    <link rel="stylesheet" href="./exmaples.css" />
+</head>
+<body>
+    <form name="signup_form" autocomplete="off" novalidate class="wrapper">
+        <label>
+            email 
+            <input type="email" name="email"/>
+        </label>
+
+        <label>
+            password
+            <input type="password" name="password"/>
+        </label>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <form class="wrapper">
+        <label for="user_email">E-mail</label>
+        <input type="email" name="email" id="user_email" />
+
+        <label for="user_password">Password</label>
+        <input type="password" name="password" id="user_password"/>
+
+        <button type="submit">Submit</button>
+    </form>
+
+
+    <form class="wrapper">
+        <label>
+          nick
+          <input type="text" name="nick" placeholder="Example nick (tomek333__)" />
+        </label>
+        <button type="submit">Submit feedback</button>
+      </form>
+
+      <h1>Poczta emal i password i walidacja tego</h1>
+
+      <form class="wrapper">
+        <label>
+          Email
+          <input type="email" name="email" pattern="[a-z0-3._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+        </label>
+        <label>
+          Password
+          <input type="password" name="pwd" />
+        </label>
+        <label>
+          Phone number
+          <input type="tel" name="phone" />
+        </label>
+        <button type="submit">Register</button>
+      </form>
+
+
+      <h1>Przyciski radio ( przelaczniki) </h1>
+      <form class="line">
+        <p>Choose a color:</p>
+        <label>
+          <input type="radio" name="color" value="red" />
+          Red
+        </label>
+        <label>
+          <input type="radio" name="color" value="white"  />
+          White
+        </label>
+        <label>
+          <input type="radio" name="color" value="green" checked />
+          Green
+        </label>
+      
+        <p>Select size:</p>
+        <label>
+          <input type="radio" name="size" value="sm" checked />
+          Small
+        </label>
+        <label>
+          <input type="radio" name="size" value="md"  />
+          Medium
+        </label>
+        <label>
+          <input type="radio" name="size" value="lg"   />
+          Large
+        </label>
+      </form>
+
+      <h1>Pole wyboru checkbox</h1>
+      <form class="wrapper">
+        <p>What are your hobbies?</p>
+        <button>Zaznacz wszystkie</button>
+        <label>
+          <input type="checkbox" name="hobby" value="music" checked />
+          Music
+        </label>
+        <label>
+          <input type="checkbox" name="hobby" value="sports" checked />
+          Sports
+        </label>
+        <label>
+          <input type="checkbox" name="hobby" value="reading" />
+          Reading
+        </label>
+      </form>
+
+
+      <form class="wrapper">
+
+        <label>
+            Weight:
+            <input type="number" name="weight" />
+          </label>
+
+        <label>
+          Weight with 0.5 step value:
+          <input type="number" name="weight" min="0" max="1" step="0.001" value="0.001" />
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+
+
+
+      <form class="line">
+        <label>
+          Phone number
+          <input type="tel" name="phone_number" />
+        </label>
+      
+        <button type="submit">Submit</button>
+      </form>
+
+
+      <label>
+        Interest rate:
+        <input
+          type="range"
+          name="interest_rate"
+          value="20"
+          min="0"
+          max="100"
+          step="10"
+        />
+      </label>
+
+
+      <div class="wrapper">
+        <label>
+        Date
+        <input type="date" />
+      </label>
+      
+      <label>
+        Time
+        <input type="time" />
+      </label>
+      
+      <label>
+        Date and time
+        <input type="datetime-local" />
+      </label>
+
+
+      <input
+      type="datetime-local"
+      id="meeting-time"
+      name="meeting-time"
+      value="2018-06-12T19:30"
+      min="2018-06-07T00:00"
+      max="2018-06-14T00:00" />
+
+
+      <form class="wrapper">
+        <label>
+          Username
+          <input type="text" name="username" placeholder="Jack Meadows">
+        </label>
+        <label>
+          Feedback
+          <textarea name="feedback" rows="10" placeholder="Enter your message here..."  ></textarea>
+        </label>
+        <button type="submit">Submit</button>
+      </form>
+
+
+      <div class="wrapper">
+        <label for="size">Size</label>
+        <select id="size" name="size">
+          <option value="xs">Extra Small</option>
+          <option value="s">Small</option>
+          <option value="m" selected>Medium</option>
+          <option value="l">Large</option>
+        </select>
+
+
+        <div class="wrapper">
+            <label for="month">Month</label>
+          <select name="month" id="month">
+            <optgroup label="Summer">
+              <option value="s6">June</option>
+              <option value="s7">July</option>
+              <option value="s8">August</option>
+            </optgroup>
+          
+            <optgroup label="Autumn">
+              <option value="s9">September</option>
+              <option value="s10">October</option>
+              <option value="s11">November</option>
+            </optgroup>
+          </select>
+          </div>
+
+
+          <div class="wrapper">
+            <input list="cars" name="car" id="car">
+            <datalist id="cars">
+                <option value="Volvo">
+                <option value="Saab">
+                <option value="Mercedes">
+                <option value="Audi">
+            </datalist>
+          </div>
+
+
+</body>
+</html>

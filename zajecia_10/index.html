@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+
+    <main>
+        <form>
+            <h2>Formularz HTML</h2>
+            <fieldset>
+                <legend>Dane osobowe</legend>
+                <label for="name">Imię:</label>
+                <input type="text" id="name" name="name" placeholder="John" required/>
+
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required/>
+
+                <br>
+
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+48 123 456 789"/>
+                
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+                <legend>Preferencje</legend>
+
+                <label for="subscribe">Subskrybuj newsletter:</label>
+                <input type="checkbox" id="subscribe" name="subscribe"/>
+
+                <br>
+
+                <label for="payment1">Karta kredytowa:</label>
+                <input type="radio" id="payment1" name="payment1"/>
+
+                <label for="payment2">Przelew bankowy:</label>
+                <input type="radio" id="payment2" name="payment1"/>
+            </fieldset>
+
+
+                <br>
+
+                <label for="birthdate">Data urodzenia:</label>
+                <input type="date" id="birthdate" name="birthdate"/>
+
+                <br>
+
+                <label for="message">Data urodzenia:</label>
+                <textarea id="message" name="message" placeholder="Wpisz tutaj swoja wiadomosc..."></textarea>
+                
+
+                <br>
+
+                <label for="country">Kraj:</label>
+                <select id="country" name="country">
+                    <option value="usa">Stany Zjednoczone</option>
+                    <option value="ca">Kanada</option>
+                    <option value="pl">Polska</option>
+                </select>
+                
+                <br>
+
+                <label for="browser">Ulubiona przegladarka:</label>
+                <input list="browser_options" id="browser" placeholder="Wybierz lub wpisz..."/>
+                <datalist id="browser_options">
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                </datalist>
+
+
+                <input type="submit" value="Wyslij"/>
+        </form>
+    </main>
+</body>
+</html>

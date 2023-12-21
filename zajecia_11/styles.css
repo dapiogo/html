@@ -1,0 +1,76 @@
+.wrapper {
+    padding:10px;
+    border:1px solid black;
+  }
+
+  .mark {
+    border: 1px solid black;
+    margin: 30px 0;
+  }
+
+  button:enabled {
+    color:red;
+    font-weight: 500;
+  }
+
+  button:disabled {
+    color:grey;
+  }
+
+  /* :checked */
+
+  .form-input:checked + .form-label {
+    color:blue;
+  }
+
+  /* in-range i out of range  */
+
+  .form-input-range:in-range {
+    border:10px solid green;
+  }
+
+  .form-input-range:out-of-range {
+    border:10px solid red;
+  }
+
+  /* required i optional  */
+
+  .form-input-req:required {
+    border:5px solid red;
+  }
+
+  .form-input-opt:optional {
+    border:5px solid yellow;
+  }
+
+  /* valid invalid  */
+
+  .form-input-vi:valid {
+    border: 5px solid yellow;
+  }
+
+  .form-input-vi:invalid {
+   border: 7px solid orange;;
+  }
+
+  /* :placeholder-shown */
+
+  .form-input-ps:placeholder-shown {
+    border:10px solid blue
+  }
+
+  .form-test {
+    width: 100%;
+    padding: 30px;
+    border-radius: 5px;
+    border:2px solid blue;
+  }
+
+  .form-test:focus-within {
+    border-color:red;
+  }
+
+  .form-label8:focus-within {
+    color:brown;
+  }
+  
